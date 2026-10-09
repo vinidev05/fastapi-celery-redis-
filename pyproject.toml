@@ -1,0 +1,19 @@
+
+[tool.poetry]
+name = "fastapi-celery-redis"
+version = "0.1.0"
+description = "Projeto FastAPI com Celery e Redis"
+authors = ["Desenvolvedor <dev@example.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.15"
+fastapi = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+celery = "*"
+redis = "*"
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
